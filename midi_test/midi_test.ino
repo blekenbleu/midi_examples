@@ -15,16 +15,19 @@
  *   https://github.com/FortySevenEffects/arduino_midi_library
  */
 
-#include <Arduino.h>
-#include <Adafruit_TinyUSB.h>
+//#include <Arduino.h>
+//#include <Adafruit_TinyUSB.h>
 #include <MIDI.h>
+#include "esp32s2LED.h"
 
 // USB MIDI object
-Adafruit_USBD_MIDI usb_midi;
+//Adafruit_USBD_MIDI usb_midi;
 
 // Create a new instance of the Arduino MIDI Library,
 // and attach usb_midi as the transport.
-MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
+//MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
+MIDI_CREATE_DEFAULT_INSTANCE();
+CREATE_ESP32_WS2812_INSTANCE();
 
 // Variable that holds the current position in the sequence.
 uint32_t position = 0;
@@ -43,13 +46,14 @@ void setup()
   TinyUSB_Device_Init(0);
 #endif
 
-  pinMode(LED_BUILTIN, OUTPUT);
+//  pinMode(LED_BUILTIN, OUTPUT);
   
   //usb_midi.setStringDescriptor("TinyUSB MIDI");
 
   // Initialize MIDI, and listen to all MIDI channels
   // This will also call usb_midi's begin()
-  MIDI.begin(MIDI_CHANNEL_OMNI);
+  MIDI.begin(4);	// Launch MIDI and listen to channel 4
+  ESP32_WS2812_SETUP(255);
 
   // Attach the handleNoteOn function to the MIDI Library. It will
   // be called whenever the Bluefruit receives MIDI Note On messages.
@@ -61,7 +65,7 @@ void setup()
   Serial.begin(115200);
 
   // wait until device mounted
-  while( !TinyUSBDevice.mounted() ) delay(1);
+//  while( !TinyUSBDevice.mounted() ) delay(1);
 }
 
 void loop()
