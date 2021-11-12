@@ -3,12 +3,11 @@
 #include <WiFi.h>
 #include <AsyncTCP.h>
 #include <ESPAsyncWebServer.h>
-#include <Adafruit_NeoPixel.h>
+//#include <Adafruit_NeoPixel.h>
+#include "esp32s2LED.h"
 
 //Onboard RGB LED (NeoPixel)
-#define PIXELPIN  18
-#define NUMPIXELS 1
-Adafruit_NeoPixel pixel(NUMPIXELS, PIXELPIN, NEO_GRB + NEO_KHZ800);
+CREATE_ESP32_WS2812_INSTANCE();
 
 AsyncWebServer server(80);
 
@@ -45,9 +44,7 @@ void setup() {
   Serial.println(ESP.getChipRevision());
   Serial.println();
   
-  pixel.begin();    // INITIALIZE NeoPixel
-  pixel.clear();    // Set pixel colors to 'off'
-  pixel.show();
+  ESP32_WS2812_SETUP(0);      // WS2812 all off
 
   //Act as STA, connect to WiFi network
   WiFi.mode(WIFI_STA);
@@ -86,8 +83,7 @@ void setup() {
       Serial.println(b);
 
       //set NeoPixel color
-      pixel.setPixelColor(0, pixel.Color(r, g, b));
-      pixel.show();
+      ESP32_LED(r,g,b);
     }
     
     else {
