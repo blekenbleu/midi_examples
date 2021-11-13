@@ -17,8 +17,8 @@
 
 //#include <Arduino.h>
 //#include <Adafruit_TinyUSB.h>
-//#include <MIDI.h>
-#include <USB-MIDI.h>
+#include <MIDI.h>
+//#include <USB-MIDI.h>
 #include "esp32s2LED.h"
 
 // USB MIDI object
@@ -27,8 +27,8 @@
 // Create a new instance of the Arduino MIDI Library,
 // and attach usb_midi as the transport.
 //MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
-//MIDI_CREATE_DEFAULT_INSTANCE();
-USBMIDI_CREATE_DEFAULT_INSTANCE();
+MIDI_CREATE_DEFAULT_INSTANCE();
+//USBMIDI_CREATE_DEFAULT_INSTANCE();
 CREATE_ESP32_WS2812_INSTANCE();
 
 // Variable that holds the current position in the sequence.
@@ -75,6 +75,7 @@ void loop()
   static uint32_t start_ms = 0;
   if ( millis() - start_ms > 266 )
   {
+    Serial.println("midi_test loop");
     start_ms += 266;
     
     // Setup variables for the current and previous
