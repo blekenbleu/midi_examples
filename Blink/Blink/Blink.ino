@@ -12,16 +12,18 @@ void setup() {
 
 // the loop function runs over and over again forever
 void loop() {
-  ESP32_RED(0);                      // turn the LED off
-  Serial.println("WS2812 off");
-  delay(1000);                       // wait for a second
-  ESP32_LED(0,255,0);                // turn the LED green
-  Serial.println("WS2812 green");
-  delay(1000);                       // wait for a second
-  ESP32_LED(0,0,255);                // turn the LED blue
-  Serial.println("WS2812 blue");
-  delay(1000);                       // wait for a second
-  ESP32_RED(128);                    // turn the LED half on
-  Serial.println("WS2812 dark red");
-  delay(1000);                       // wait for a second
+  for (int i=55; i <256; i+=51) {
+    ESP32_RED(0);                      // turn the LED off
+    Serial.println("WS2812 off");
+    delay(1000);                       // wait for a second
+    ESP32_LED(0,i,0);                // turn the LED green
+    Serial.println("WS2812 green");
+    delay(1000);                       // wait for a second
+    ESP32_LED(0,0,i);                // turn the LED blue
+    Serial.println("WS2812 blue");
+    delay(1000);                       // wait for a second
+    ESP32_RED(i>>1);                    // turn the LED half on
+    Serial.println("WS2812 dark red");
+    delay(1000);                       // wait for a second
+  }
 }
