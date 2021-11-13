@@ -1,4 +1,4 @@
-#include <MIDI.h>
+#include <MIDI.h>	// tries to use ESP32-S2-Saola-1 UART0
 #include "esp32s2LED.h"
 
 // Simple tutorial on how to receive and send MIDI messages.
@@ -11,6 +11,7 @@ CREATE_ESP32_WS2812_INSTANCE();
 void setup() {
   MIDI.begin(4);                 // Launch MIDI and listen to channel 4
   ESP32_WS2812_SETUP(255);
+  Serial.begin(115200);          // At least STM32 needs this for Arduino uploads
 }
 
 void loop() {
@@ -21,4 +22,5 @@ void loop() {
     MIDI.sendNoteOff(42, 0, 1);  // Stop the note
     ESP32_RED(255);
   }
+  else ESP32_LED(0,255,0);       // green
 }
