@@ -2,12 +2,10 @@
  * Simple example MIDI class
  * author: chegewara
  */
-//#include "MIDI.h"  << not found
-#include "midiusb.h"
-#include "song.h"
-// #ifdef CFG_TUD_MIDI
 
-//MIDI midi;
+#include "midiusb.h"   // ESP32TinyUSB
+#include "song.h"
+
 MIDIusb midi;
 
 void setup() {
@@ -64,5 +62,3 @@ void loop() {
   // midi_task();
   // midi.playSong();
 }
-
-// #endif

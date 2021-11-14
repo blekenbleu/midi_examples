@@ -20,15 +20,14 @@
 #include "MIDIUSB.h"      // needs hacking to invoke TinyUSB
 //#include <USB-MIDI.h>
 
-
 // USB MIDI object
 //MIDIusb MIDI;
 
 // Create a new instance of the Arduino MIDI Library,
 // and attach usb_midi as the transport.
 //MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
-MIDI_CREATE_DEFAULT_INSTANCE();
-//USBMIDI_CREATE_DEFAULT_INSTANCE();
+//MIDI_CREATE_DEFAULT_INSTANCE();
+TUSBMIDI_CREATE_DEFAULT_INSTANCE();
 CREATE_ESP32_WS2812_INSTANCE();
 
 // Variable that holds the current position in the sequence.
