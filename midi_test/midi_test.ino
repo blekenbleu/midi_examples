@@ -15,14 +15,14 @@
  *   https://github.com/FortySevenEffects/arduino_midi_library
  */
 
-//#include <Arduino.h>
-//#include <Adafruit_TinyUSB.h>
-#include <MIDI.h>
+#include "esp32s2LED.h"   // defines USBCON for MIDIUSB
+//#include <MIDI.h>       // builds 11/13/2021 but writes to serial port
+#include "MIDIUSB.h"      // needs hacking to invoke TinyUSB
 //#include <USB-MIDI.h>
-#include "esp32s2LED.h"
+
 
 // USB MIDI object
-//Adafruit_USBD_MIDI usb_midi;
+//MIDIusb MIDI;
 
 // Create a new instance of the Arduino MIDI Library,
 // and attach usb_midi as the transport.
