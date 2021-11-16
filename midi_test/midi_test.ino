@@ -18,17 +18,12 @@
 #include "esp32s2LED.h"   // defines USBCON for MIDIUSB
 //#include <MIDI.h>       // builds 11/13/2021 but writes to serial port
 #include "MIDIUSB.h"      // MIDIUSB/src needs hacking to invoke TinyUSB
-//#include <USB-MIDI.h>
 
-// USB MIDI object
-//MIDIusb MIDI;
-
-// Create a new instance of the Arduino MIDI Library,
-// and attach usb_midi as the transport.
-//MIDI_CREATE_INSTANCE(Adafruit_USBD_MIDI, usb_midi, MIDI);
 //MIDI_CREATE_DEFAULT_INSTANCE();
+// Create a new instance of the Esp32TinyUSB MIDI Library,
+// and attach usb_midi as the transport.
 TUSBMIDI_CREATE_DEFAULT_INSTANCE();	// (T)MIDIUSB/src/MIDIUSB.h
-CREATE_ESP32_WS2812_INSTANCE();
+CREATE_ESP32_WS2812_INSTANCE();     // WS218 RGB LED
 
 // Variable that holds the current position in the sequence.
 uint32_t position = 0;
