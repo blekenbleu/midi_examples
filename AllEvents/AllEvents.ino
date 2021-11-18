@@ -1,6 +1,8 @@
-#include <USB-MIDI.h>
+//#include <USB-MIDI.h>
+#include "MIDIUSB.h"
 
-USBMIDI_CREATE_DEFAULT_INSTANCE();
+TUSBMIDI_CREATE_DEFAULT_INSTANCE();
+//USBMIDI_CREATE_DEFAULT_INSTANCE();
 
 unsigned long t0 = millis();
 unsigned long tClock = millis();
