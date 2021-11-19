@@ -1,7 +1,7 @@
 //#include <USB-MIDI.h>
 #include "MIDIUSB.h"
 
-TUSBMIDI_CREATE_DEFAULT_INSTANCE();
+TinyUSBMIDI_CREATE_DEFAULT_INSTANCE();
 //USBMIDI_CREATE_DEFAULT_INSTANCE();
 
 unsigned long t0 = millis();

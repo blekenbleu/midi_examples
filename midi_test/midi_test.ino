@@ -22,7 +22,7 @@
 //MIDI_CREATE_DEFAULT_INSTANCE();
 // Create a new instance of the Esp32TinyUSB MIDI Library,
 // and attach usb_midi as the transport.
-TUSBMIDI_CREATE_DEFAULT_INSTANCE();	// (T)MIDIUSB/src/MIDIUSB.h
+TinyUSBMIDI_CREATE_DEFAULT_INSTANCE();	// (T)MIDIUSB/src/MIDIUSB.h
 CREATE_ESP32_WS2812_INSTANCE();     // WS218 RGB LED
 
 // Variable that holds the current position in the sequence.
