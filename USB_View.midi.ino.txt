@@ -1,0 +1,122 @@
+Device Descriptor:
+bcdUSB:             0x0200
+bDeviceClass:         0x00
+bDeviceSubClass:      0x00
+bDeviceProtocol:      0x00
+bMaxPacketSize0:      0x40 (64)
+idVendor:           0x303A
+idProduct:          0x0002
+bcdDevice:          0x0100
+iManufacturer:        0x01
+0x0409: "Espressif"
+iProduct:             0x02
+0x0409: "ESP32S2 arduino device"
+iSerialNumber:        0x03
+0x0409: "1234-5678"
+bNumConfigurations:   0x01
+
+ConnectionStatus: DeviceConnected
+Current Config Value: 0x01
+Device Bus Speed:     Full
+Device Address:       0x38
+Open Pipes:              2
+
+Endpoint Descriptor:
+bEndpointAddress:     0x05  OUT
+Transfer Type:        Bulk
+wMaxPacketSize:     0x0040 (64)
+wInterval:          0x0000
+bSyncAddress:         0x00
+
+Endpoint Descriptor:
+bEndpointAddress:     0x85  IN
+Transfer Type:        Bulk
+wMaxPacketSize:     0x0040 (64)
+wInterval:          0x0000
+bSyncAddress:         0x00
+
+Configuration Descriptor:
+wTotalLength:       0x0065
+bNumInterfaces:       0x02
+bConfigurationValue:  0x01
+iConfiguration:       0x00
+bmAttributes:         0xA0 (Bus Powered Remote Wakeup)
+MaxPower:             0xFA (500 Ma)
+
+Interface Descriptor:
+bInterfaceNumber:     0x01
+bAlternateSetting:    0x00
+bNumEndpoints:        0x00
+bInterfaceClass:      0x01 (Audio)
+bInterfaceSubClass:   0x01 (Audio Control)
+bInterfaceProtocol:   0x00
+iInterface:           0x08
+0x0409: "midi ino"
+
+Audio Control Interface Header Descriptor:
+bLength:              0x09
+bDescriptorType:      0x24
+bDescriptorSubtype:   0x01
+bcdADC:             0x0100
+wTotalLength:       0x0009
+bInCollection:        0x01
+baInterfaceNr[1]:     0x02
+
+Interface Descriptor:
+bInterfaceNumber:     0x02
+bAlternateSetting:    0x00
+bNumEndpoints:        0x02
+bInterfaceClass:      0x01 (Audio)
+bInterfaceSubClass:   0x03 (MIDI Streaming)
+bInterfaceProtocol:   0x00
+iInterface:           0x00
+
+Unknown Descriptor:
+bDescriptorType:      0x24
+bLength:              0x07
+07 24 01 00 01 25 00 
+
+Unknown Descriptor:
+bDescriptorType:      0x24
+bLength:              0x06
+06 24 02 01 01 00 
+
+Unknown Descriptor:
+bDescriptorType:      0x24
+bLength:              0x06
+06 24 02 02 02 00 
+
+Unknown Descriptor:
+bDescriptorType:      0x24
+bLength:              0x09
+09 24 03 01 03 01 02 01 00 
+
+Unknown Descriptor:
+bDescriptorType:      0x24
+bLength:              0x09
+09 24 03 02 04 01 01 01 00 
+
+Endpoint Descriptor:
+bEndpointAddress:     0x05  OUT
+Transfer Type:        Bulk
+wMaxPacketSize:     0x0040 (64)
+wInterval:          0x0000
+bSyncAddress:         0x00
+
+Unknown Descriptor:
+bDescriptorType:      0x25
+bLength:              0x05
+05 25 01 01 01 
+
+Endpoint Descriptor:
+bEndpointAddress:     0x85  IN
+Transfer Type:        Bulk
+wMaxPacketSize:     0x0040 (64)
+wInterval:          0x0000
+bSyncAddress:         0x00
+
+Unknown Descriptor:
+bDescriptorType:      0x25
+bLength:              0x05
+05 25 01 01 03 
+

@@ -1,0 +1,286 @@
+
+    =========================== USB Port2 ===========================
+
+Connection Status        : 0x01 (Device is connected)
+Port Chain               : 1-11-2
+Properties               : 0x01
+ IsUserConnectable       : yes
+ PortIsDebugCapable      : no
+ PortHasMultiCompanions  : no
+ PortConnectorIsTypeC    : no
+ConnectionIndex          : 0x02 (Port 2)
+CompanionIndex           : 0
+ CompanionHubSymLnk      : USB#VID_2109&PID_0813#5&115b2927&0&20#{f18a0e88-c30c-11d0-8815-00a0c906bed8}
+ CompanionPortNumber     : 0x02 (Port 2)
+ -> CompanionPortChain   : 1-20-2
+
+      ========================== Summary =========================
+Vendor ID                : 0x0944 (KORG, Inc.)
+Product ID               : 0x0117
+USB version              : 1.10
+Port maximum Speed       : High-Speed (Companion Port 1-20-2 supports SuperSpeed)
+Device maximum Speed     : Full-Speed
+Device Connection Speed  : Full-Speed
+Self Powered             : no
+Demanded Current         : 100 mA
+Used Endpoints           : 3
+
+      ======================== USB Device ========================
+
+        +++++++++++++++++ Device Information ++++++++++++++++++
+Friendly Name            : nanoKONTROL2
+Device Description       : USB Audio Device
+Device Path 1            : \\?\USB#VID_0944&PID_0117#6&4984f7c&0&2#{65e8773e-8f56-11d0-a3b9-00a0c9223196}\global (AM_KSCATEGORY_RENDER)
+Device Path 2            : \\?\USB#VID_0944&PID_0117#6&4984f7c&0&2#{65e8773d-8f56-11d0-a3b9-00a0c9223196}\global (AM_KSCATEGORY_CAPTURE)
+Device Path 3            : \\?\USB#VID_0944&PID_0117#6&4984f7c&0&2#{6994ad04-93ef-11d0-a3cc-00a0c9223196}\global (AM_KSCATEGORY_AUDIO)
+Device Path 4            : \\?\USB#VID_0944&PID_0117#6&4984f7c&0&2#{a5dcbf10-6530-11d2-901f-00c04fb951ed} (GUID_DEVINTERFACE_USB_DEVICE)
+Kernel Name              : \Device\USBPDO-18
+Device ID                : USB\VID_0944&PID_0117\6&4984F7C&0&2
+Hardware IDs             : USB\VID_0944&PID_0117&REV_0100 USB\VID_0944&PID_0117
+Driver KeyName           : {4d36e96c-e325-11ce-bfc1-08002be10318}\0013 (GUID_DEVCLASS_MEDIA)
+Driver                   : \SystemRoot\system32\drivers\usbaudio.sys (Version: 10.0.19041.1202  Date: 2021-09-15)
+Driver Inf               : C:\WINDOWS\inf\wdma_usb.inf
+Legacy BusType           : PNPBus
+Class                    : MEDIA
+Class GUID               : {4d36e96c-e325-11ce-bfc1-08002be10318} (GUID_DEVCLASS_MEDIA)
+Service                  : usbaudio
+Enumerator               : USB
+Location Info            : Port_#0002.Hub_#0007
+Location IDs             : PCIROOT(0)#PCI(1400)#USBROOT(0)#USB(11)#USB(2), ACPI(_SB_)#ACPI(PCI0)#ACPI(XHC_)#ACPI(RHUB)#ACPI(HS11)#USB(2)
+Container ID             : {0da82302-3e2f-11ec-886d-d89ef3899612}
+Manufacturer Info        : (Generic USB Audio)
+Capabilities             : 0xA4 (Removable, SilentInstall, SurpriseRemovalOK)
+Status                   : 0x0180600A (DN_DRIVER_LOADED, DN_STARTED, DN_DISABLEABLE, DN_REMOVABLE, DN_NT_ENUMERATOR, DN_NT_DRIVER)
+Problem Code             : 0
+HcDisableSelectiveSuspend: 0
+EnableSelectiveSuspend   : 0
+SelectiveSuspendEnabled  : 0
+EnhancedPowerMgmtEnabled : 0
+IdleInWorkingState       : 0
+WakeFromSleepState       : 0
+Power State              : D0 (supported: D0, D3, wake from D0, wake from D3)
+ Child Device 1          : nanoKONTROL2 _ CTRL (Generic software device)
+  Device ID              : SWD\MMDEVAPI\MIDII_BEEA4E20.P_0000
+  Class                  : SoftwareDevice
+  Driver KeyName         : {62f9c741-b25a-46ce-b54c-9bccce08b6f2}\0024 (GUID_DEVCLASS_SWD)
+ Child Device 2          : nanoKONTROL2 _ SLIDER/KNOB (Generic software device)
+  Device ID              : SWD\MMDEVAPI\MIDII_BEEA4E20.P_0001
+  Class                  : SoftwareDevice
+  Driver KeyName         : {62f9c741-b25a-46ce-b54c-9bccce08b6f2}\0025 (GUID_DEVCLASS_SWD)
+
+        ---------------- Connection Information ---------------
+Connection Index         : 0x02 (Port 2)
+Connection Status        : 0x01 (DeviceConnected)
+Current Config Value     : 0x01 (Configuration 1)
+Device Address           : 0x11 (17)
+Is Hub                   : 0x00 (no)
+Device Bus Speed         : 0x01 (Full-Speed)
+Number Of Open Pipes     : 0x02 (2 pipes to data endpoints)
+Pipe[0]                  : EndpointID=2  Direction=OUT  ScheduleOffset=0  Type=Bulk
+Pipe[1]                  : EndpointID=1  Direction=IN   ScheduleOffset=0  Type=Bulk
+Data (HexDump)           : 02 00 00 00 12 01 10 01 00 00 00 08 44 09 17 01   ............D...
+                           00 01 01 02 00 01 01 01 00 11 00 02 00 00 00 01   ................
+                           00 00 00 09 05 02 02 40 00 00 00 00 00 00 09 05   .......@........
+                           81 02 40 00 00 00 00 00 00                        ..@......
+
+        --------------- Connection Information V2 -------------
+Connection Index         : 0x02 (2)
+Length                   : 0x10 (16 bytes)
+SupportedUsbProtocols    : 0x03
+ Usb110                  : 1 (yes, port supports USB 1.1)
+ Usb200                  : 1 (yes, port supports USB 2.0)
+ Usb300                  : 0 (no, port not supports USB 3.0) -> but Companion Port 1-20-2 does
+ ReservedMBZ             : 0x00
+Flags                    : 0x00
+ DevIsOpAtSsOrHigher     : 0 (Device is not operating at SuperSpeed or higher)
+ DevIsSsCapOrHigher      : 0 (Device is not SuperSpeed capable or higher)
+ DevIsOpAtSsPlusOrHigher : 0 (Device is not operating at SuperSpeedPlus or higher)
+ DevIsSsPlusCapOrHigher  : 0 (Device is not SuperSpeedPlus capable or higher)
+ ReservedMBZ             : 0x00
+Data (HexDump)           : 02 00 00 00 10 00 00 00 03 00 00 00 00 00 00 00   ................
+
+    ---------------------- Device Descriptor ----------------------
+bLength                  : 0x12 (18 bytes)
+bDescriptorType          : 0x01 (Device Descriptor)
+bcdUSB                   : 0x110 (USB Version 1.10)
+bDeviceClass             : 0x00 (defined by the interface descriptors)
+bDeviceSubClass          : 0x00
+bDeviceProtocol          : 0x00
+bMaxPacketSize0          : 0x08 (8 bytes)
+idVendor                 : 0x0944 (KORG, Inc.)
+idProduct                : 0x0117
+bcdDevice                : 0x0100
+iManufacturer            : 0x01 (String Descriptor 1)
+ Language 0x0409         : "KORG INC."
+iProduct                 : 0x02 (String Descriptor 2)
+ Language 0x0409         : "nanoKONTROL2"
+iSerialNumber            : 0x00 (No String Descriptor)
+bNumConfigurations       : 0x01 (1 Configuration)
+Data (HexDump)           : 12 01 10 01 00 00 00 08 44 09 17 01 00 01 01 02   ........D.......
+                           00 01                                             ..
+
+    ------------------ Configuration Descriptor -------------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x02 (Configuration Descriptor)
+wTotalLength             : 0x0053 (83 bytes)
+bNumInterfaces           : 0x01 (1 Interface)
+bConfigurationValue      : 0x01 (Configuration 1)
+iConfiguration           : 0x00 (No String Descriptor)
+bmAttributes             : 0x80
+ D7: Reserved, set 1     : 0x01
+ D6: Self Powered        : 0x00 (no)
+ D5: Remote Wakeup       : 0x00 (no)
+ D4..0: Reserved, set 0  : 0x00
+MaxPower                 : 0x32 (100 mA)
+Data (HexDump)           : 09 02 53 00 01 01 00 80 32 09 04 00 00 02 01 03   ..S.....2.......
+                           00 00 07 24 01 00 01 25 00 06 24 02 01 10 03 09   ...$...%..$.....
+                           24 03 02 40 01 10 01 04 09 24 03 01 30 01 20 01   $..@.....$..0. .
+                           05 06 24 02 02 20 04 09 05 02 02 40 00 00 00 00   ..$.. .....@....
+                           05 25 01 01 10 09 05 81 02 40 00 00 00 00 05 25   .%.......@.....%
+                           01 01 30                                          ..0
+
+        ---------------- Interface Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x04 (Interface Descriptor)
+bInterfaceNumber         : 0x00
+bAlternateSetting        : 0x00
+bNumEndpoints            : 0x02 (2 Endpoints)
+bInterfaceClass          : 0x01 (Audio)
+bInterfaceSubClass       : 0x03 (MIDI Streaming)
+bInterfaceProtocol       : 0x00
+iInterface               : 0x00 (No String Descriptor)
+Data (HexDump)           : 09 04 00 00 02 01 03 00 00                        .........
+
+        - MIDI Adapter Class specific MS Interface Descriptor -
+bLength                  : 0x07 (7 bytes)
+bDescriptorType          : 0x24 (Class Specific Interface Descriptor)
+bDescriptorSubtype       : 0x01 (MS Header)
+bcdADC                   : 0x0100
+wTotalLength             : 0x0025 (37 bytes)
+Data (HexDump)           : 07 24 01 00 01 25 00 06 24 02 01 10 03 09 24 03   .$...%..$.....$.
+                           02 40 01 10 01 04 09 24 03 01 30 01 20 01 05 06   .@.....$..0. ...
+                           24 02 02 20 04                                    $.. .
+
+        ---------------- MIDI IN Jack Descriptor --------------
+bLength                  : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Class Specific Interface Descriptor)
+bDescriptorSubtype       : 0x02 (MIDI_IN_JACK)
+bJackType                : 0x01 (Embedded)
+bJackID                  : 0x10 (ID=16)
+iJack                    : 0x03 (String Descriptor 3)
+ Language 0x0409         : "nanoKONTROL2 _ CTRL"
+Data (HexDump)           : 06 24 02 01 10 03                                 .$....
+
+        --------------- MIDI OUT Jack Descriptor --------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x24 (Class Specific Interface Descriptor)
+bDescriptorSubtype       : 0x03 (MIDI_OUT_JACK)
+bJackType                : 0x02 (External)
+bJackID                  : 0x40 (ID=64)
+bNrInputPins             : 0x01 (1 pin)
+baSourceID(1)            : 0x10 (input pin connected to entity ID=16)
+baSourcePin(1)           : 0x01 (connected to input pin number 1
+iJack                    : 0x04 (String Descriptor 4)
+ Language 0x0409         : "EXT0"
+Data (HexDump)           : 09 24 03 02 40 01 10 01 04                        .$..@....
+
+        --------------- MIDI OUT Jack Descriptor --------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x24 (Class Specific Interface Descriptor)
+bDescriptorSubtype       : 0x03 (MIDI_OUT_JACK)
+bJackType                : 0x01 (Embedded)
+bJackID                  : 0x30 (ID=48)
+bNrInputPins             : 0x01 (1 pin)
+baSourceID(1)            : 0x20 (input pin connected to entity ID=32)
+baSourcePin(1)           : 0x01 (connected to input pin number 1
+iJack                    : 0x05 (String Descriptor 5)
+ Language 0x0409         : "nanoKONTROL2 _ SLIDER/KNOB"
+Data (HexDump)           : 09 24 03 01 30 01 20 01 05                        .$..0. ..
+
+        ---------------- MIDI IN Jack Descriptor --------------
+bLength                  : 0x06 (6 bytes)
+bDescriptorType          : 0x24 (Class Specific Interface Descriptor)
+bDescriptorSubtype       : 0x02 (MIDI_IN_JACK)
+bJackType                : 0x02 (External)
+bJackID                  : 0x20 (ID=32)
+iJack                    : 0x04 (String Descriptor 4)
+ Language 0x0409         : "EXT0"
+Data (HexDump)           : 06 24 02 02 20 04                                 .$.. .
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x02 (Direction=OUT EndpointID=2)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (0 ms)
+bRefresh                 : 0x00
+bSynchAddress            : 0x00
+Data (HexDump)           : 09 05 02 02 40 00 00 00 00                        ....@....
+
+        --- Class-Specific MS Bulk Data Endpoint Descriptor ---
+bLength                  : 0x05 (5 bytes)
+bDescriptorType          : 0x25 (Audio Endpoint Descriptor)
+bDescriptorSubtype       : 0x01 (MS General)
+bNumEmbMIDIJack          : 0x01 (1 embedded MIDI jack)
+baAssocJackID(1)         : 0x10 (Jack(1) ID=16)
+Data (HexDump)           : 05 25 01 01 10                                    .%...
+
+        ----------------- Endpoint Descriptor -----------------
+bLength                  : 0x09 (9 bytes)
+bDescriptorType          : 0x05 (Endpoint Descriptor)
+bEndpointAddress         : 0x81 (Direction=IN EndpointID=1)
+bmAttributes             : 0x02 (TransferType=Bulk)
+wMaxPacketSize           : 0x0040 (64 bytes)
+bInterval                : 0x00 (0 ms)
+bRefresh                 : 0x00
+bSynchAddress            : 0x00
+Data (HexDump)           : 09 05 81 02 40 00 00 00 00                        ....@....
+
+        --- Class-Specific MS Bulk Data Endpoint Descriptor ---
+bLength                  : 0x05 (5 bytes)
+bDescriptorType          : 0x25 (Audio Endpoint Descriptor)
+bDescriptorSubtype       : 0x01 (MS General)
+bNumEmbMIDIJack          : 0x01 (1 embedded MIDI jack)
+baAssocJackID(1)         : 0x30 (Jack(1) ID=48)
+Data (HexDump)           : 05 25 01 01 30                                    .%..0
+
+      -------------------- String Descriptors -------------------
+             ------ String Descriptor 0 ------
+bLength                  : 0x04 (4 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language ID[0]           : 0x0409 (English - United States)
+Data (HexDump)           : 04 03 09 04                                       ....
+             ------ String Descriptor 1 ------
+bLength                  : 0x14 (20 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "KORG INC."
+Data (HexDump)           : 14 03 4B 00 4F 00 52 00 47 00 20 00 49 00 4E 00   ..K.O.R.G. .I.N.
+                           43 00 2E 00                                       C...
+             ------ String Descriptor 2 ------
+bLength                  : 0x1A (26 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "nanoKONTROL2"
+Data (HexDump)           : 1A 03 6E 00 61 00 6E 00 6F 00 4B 00 4F 00 4E 00   ..n.a.n.o.K.O.N.
+                           54 00 52 00 4F 00 4C 00 32 00                     T.R.O.L.2.
+             ------ String Descriptor 3 ------
+bLength                  : 0x28 (40 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "nanoKONTROL2 _ CTRL"
+Data (HexDump)           : 28 03 6E 00 61 00 6E 00 6F 00 4B 00 4F 00 4E 00   (.n.a.n.o.K.O.N.
+                           54 00 52 00 4F 00 4C 00 32 00 20 00 5F 00 20 00   T.R.O.L.2. ._. .
+                           43 00 54 00 52 00 4C 00                           C.T.R.L.
+             ------ String Descriptor 4 ------
+bLength                  : 0x0A (10 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "EXT0"
+Data (HexDump)           : 0A 03 45 00 58 00 54 00 30 00                     ..E.X.T.0.
+             ------ String Descriptor 5 ------
+bLength                  : 0x36 (54 bytes)
+bDescriptorType          : 0x03 (String Descriptor)
+Language 0x0409          : "nanoKONTROL2 _ SLIDER/KNOB"
+Data (HexDump)           : 36 03 6E 00 61 00 6E 00 6F 00 4B 00 4F 00 4E 00   6.n.a.n.o.K.O.N.
+                           54 00 52 00 4F 00 4C 00 32 00 20 00 5F 00 20 00   T.R.O.L.2. ._. .
+                           53 00 4C 00 49 00 44 00 45 00 52 00 2F 00 4B 00   S.L.I.D.E.R./.K.
+                           4E 00 4F 00 42 00                                 N.O.B.
+
