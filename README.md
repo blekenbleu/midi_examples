@@ -1,4 +1,5 @@
-# Description
+# midi_examples  
+See also [MIDI sketches](https://github.com/blekenbleu/composite_sketches)  
 
 ### Sample sketches for TinyUSB MIDI, musical instrument digital interface class  
 - [midi](midi) from [EP32TinyUSB](https://github.com/chegewara/EspTinyUSB) examples  
