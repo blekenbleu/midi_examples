@@ -1,4 +1,6 @@
 # midi_examples  
+*One of [several ESP32 repositories](https://github.com/blekenbleu/arduino-esp32#readme)*
+
 See also [MIDI sketches](https://github.com/blekenbleu/composite_sketches)  
 
 ### Sample sketches for TinyUSB MIDI, musical instrument digital interface class  
